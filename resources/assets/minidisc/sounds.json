@@ -1,0 +1,49 @@
+{
+    "record.seer": {
+        "category": "record",
+        "sounds": [
+            { "name": "minidisc:seer",
+            "stream": true }
+        ]
+    },
+    
+    "record.alchemy": {
+        "category": "record",
+        "sounds": [
+            { "name": "minidisc:alchemy",
+            "stream": true }
+        ]
+    },
+    
+    "record.gemoni": {
+        "category": "record",
+        "sounds": [
+            { "name": "minidisc:gemoni",
+            "stream": true }
+        ]
+    },
+    
+    "record.cleoparty": {
+        "category": "record",
+        "sounds": [
+            { "name": "minidisc:cleoparty",
+            "stream": true }
+        ]
+    },
+    
+    "record.lomax": {
+        "category": "record",
+        "sounds": [
+            { "name": "minidisc:lomax",
+            "stream": true }
+        ]
+    },
+    
+    "record.lotak": {
+        "category": "record",
+        "sounds": [
+            { "name": "minidisc:lotak",
+            "stream": true }
+        ]
+    }
+}
