@@ -1,0 +1,16 @@
+[
+{
+  "modid": "minidisc",
+  "name": "MiniDisc",
+  "description": "Modular Disc Mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Lethosos"],
+  "credits": "Loremaster for the tuorials",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

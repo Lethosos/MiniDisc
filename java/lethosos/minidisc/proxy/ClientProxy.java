@@ -1,14 +1,13 @@
 package lethosos.minidisc.proxy;
 
-import lethosos.minidisc.init.DiscBlocks;
-import lethosos.minidisc.init.DiscItems;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.Item;
+import net.minecraftforge.client.model.ModelLoader;
 
-public class ClientProxy implements CommonProxy {
-
-	@Override
-	public void init() {
-		DiscItems.registerRenders();
-		DiscBlocks.registerRenders();
+public class ClientProxy extends CommonProxy
+{
+	public void registerItemRenderer(Item item, int meta, String id)
+	{
+		ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(item.getRegistryName(), id));
 	}
-
 }

@@ -1,5 +1,5 @@
 {
-    "record.seer": {
+    "seer": {
         "category": "record",
         "sounds": [
             { "name": "minidisc:seer",
@@ -7,7 +7,7 @@
         ]
     },
     
-    "record.alchemy": {
+    "alchemy": {
         "category": "record",
         "sounds": [
             { "name": "minidisc:alchemy",
@@ -15,7 +15,7 @@
         ]
     },
     
-    "record.gemoni": {
+    "gemoni": {
         "category": "record",
         "sounds": [
             { "name": "minidisc:gemoni",
@@ -23,7 +23,7 @@
         ]
     },
     
-    "record.cleoparty": {
+    "cleoparty": {
         "category": "record",
         "sounds": [
             { "name": "minidisc:cleoparty",
@@ -31,7 +31,7 @@
         ]
     },
     
-    "record.lomax": {
+    "lomax": {
         "category": "record",
         "sounds": [
             { "name": "minidisc:lomax",
@@ -39,7 +39,7 @@
         ]
     },
     
-    "record.lotak": {
+    "lotak": {
         "category": "record",
         "sounds": [
             { "name": "minidisc:lotak",

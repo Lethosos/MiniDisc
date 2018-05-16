@@ -1,50 +1,24 @@
 package lethosos.minidisc.init;
 
-import lethosos.minidisc.item.ItemRecordDisc;
-import lethosos.minidisc.main.Ref;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import java.util.ArrayList;
+import java.util.List;
+
+import lethosos.minidisc.items.ItemBase;
+import lethosos.minidisc.items.ItemRecordDisc;
+import lethosos.minidisc.utils.Label;
+import lethosos.minidisc.utils.Reference;
 import net.minecraft.item.Item;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundEvent;
 
 public class DiscItems {
 	
-	public static ItemRecordDisc disc_1;
-	public static ItemRecordDisc disc_2;
-	public static ItemRecordDisc disc_3;
-	public static ItemRecordDisc disc_4;
-	public static ItemRecordDisc disc_5;
-	public static ItemRecordDisc disc_6;
+	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
-	public static void init() {
-		disc_1 = new ItemRecordDisc(Ref.RecordList.DISC_1.getRegistryName(), DiscSound.register("record." + Ref.RecordList.DISC_1.getRegistryName()));
-		disc_2 = new ItemRecordDisc(Ref.RecordList.DISC_2.getRegistryName(), DiscSound.register("record." + Ref.RecordList.DISC_2.getRegistryName()));
-		disc_3 = new ItemRecordDisc(Ref.RecordList.DISC_3.getRegistryName(), DiscSound.register("record." + Ref.RecordList.DISC_3.getRegistryName()));
-		disc_4 = new ItemRecordDisc(Ref.RecordList.DISC_4.getRegistryName(), DiscSound.register("record." + Ref.RecordList.DISC_4.getRegistryName()));
-		disc_5 = new ItemRecordDisc(Ref.RecordList.DISC_5.getRegistryName(), DiscSound.register("record." + Ref.RecordList.DISC_5.getRegistryName()));
-		disc_6 = new ItemRecordDisc(Ref.RecordList.DISC_6.getRegistryName(), DiscSound.register("record." + Ref.RecordList.DISC_6.getRegistryName()));
-	}
-	
-	public static void register() {
-		GameRegistry.register(disc_1);
-		GameRegistry.register(disc_2);
-		GameRegistry.register(disc_3);
-		GameRegistry.register(disc_4);
-		GameRegistry.register(disc_5);
-		GameRegistry.register(disc_6);
-	}
-	
-	public static void registerRenders() {
-		registerRender(disc_1);
-		registerRender(disc_2);
-		registerRender(disc_3);
-		registerRender(disc_4);
-		registerRender(disc_5);
-		registerRender(disc_6);
-	}
-	
-	private static void registerRender(Item item) {
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
-	}
-
+	public static final Item DISC_1 = new ItemRecordDisc(new Label("seer", "The Seer and the Tribesmen", "Land of Fans and Music 2"), DiscSound.registerSound("seer"));
+	public static final Item DISC_2 = new ItemRecordDisc(new Label("alchemy", "Ultimate Alchemy", "Land of Fans and Music 4"), DiscSound.registerSound("alchemy"));
+	public static final Item DISC_3 = new ItemRecordDisc(new Label("cleoparty", "Cleopatra's Cocktail Party", "Land of Fans and Music 4"), DiscSound.registerSound("cleoparty"));
+	public static final Item DISC_4 = new ItemRecordDisc(new Label("gemoni", "Gemoni Mustard Blood", "Land of Fans and Music 4"), DiscSound.registerSound("gemoni"));
+	public static final Item DISC_5 = new ItemRecordDisc(new Label("lomax", "Highland Thunder (LoMaX)", "Land of Fans and Music 4"), DiscSound.registerSound("lomax"));
+	public static final Item DISC_6 = new ItemRecordDisc(new Label("lotak", "Tragic Heights (LoTaK)", "Land of Fans and Music 4"), DiscSound.registerSound("lotak"));
 }
