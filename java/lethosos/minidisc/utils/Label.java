@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Label
 {
-	public List <Label> LABELS = new ArrayList<Label>();
+	public static final List <Label> LABELLIST = new ArrayList<Label>();
 	
 	public String smallName;
 	public String fullName;
@@ -17,8 +17,17 @@ public class Label
 		fullName = full;
 		album = alb;
 		
-		LABELS.add(this);
+		LABELLIST.add(this);
 		
 		return;		
+	}
+
+	public Label(Label label)
+	{
+		smallName = label.smallName;
+		fullName = label.fullName;
+		album = label.album;
+
+		return;
 	}
 }

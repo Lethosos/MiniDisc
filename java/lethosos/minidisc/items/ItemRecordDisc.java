@@ -25,7 +25,7 @@ public class ItemRecordDisc extends ItemRecord implements IHasModel
 	public ItemRecordDisc(Label recordLabel, net.minecraft.util.SoundEvent soundEvent)
 	{
 		super(Reference.MOD_ID + ":" + recordLabel.smallName, soundEvent);
-		setRegistryName("record_" + recordLabel.smallName);
+		setRegistryName(recordLabel.smallName);
 		setUnlocalizedName(recordLabel.smallName);
 		setCreativeTab(CreativeTabs.MISC);
 		
@@ -34,7 +34,12 @@ public class ItemRecordDisc extends ItemRecord implements IHasModel
 		
 		DiscItems.ITEMS.add(this);
 		
-		System.out.println("Sound registered: " + soundEvent.getRegistryName() + soundEvent.toString());
+		System.out.println("Sound registered: " + soundEvent.getRegistryName() + " " + soundEvent.toString());
+	}
+	
+	public void makeNull()
+	{
+		Label.LABELLIST.add(new Label(null, null, null));
 	}
 
 	@Override
